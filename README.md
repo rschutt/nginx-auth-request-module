@@ -129,7 +129,7 @@ Note that the module discards the request body. Therefore if you're
 proxying to an upstream you must set
 [`proxy_pass_request_body`](http://wiki.nginx.org/HttpProxyModule#proxy_pass_request_body)
 to `off` and set the `Content-Length` header to a null string. Here's
-and example:
+an example:
 
     location = /auth {
         proxy_pass http://auth_backend;
